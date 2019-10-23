@@ -1,0 +1,45 @@
+.about-bg {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/lightbulb.jpg');
+	min-height: 600px;
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about-bg2 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/whiteboard.jpg');
+	min-height: 600px;
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about-bg3 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/collaboration.jpg');
+	min-height: 600px;
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.aboutText {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	margin: 45px;
+}
+
+.creditText {
+	font-size: 50%;
+	color: grey;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.textBox {
+	padding: 75px;
+}
