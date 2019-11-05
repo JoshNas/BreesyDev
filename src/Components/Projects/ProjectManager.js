@@ -29,7 +29,7 @@ const projectCoffeeDetails = 'React.js website designed for coffee shop. Utilizi
 const projectBooksDetails = 'Signup and Log in with Amazon Cognito to track your reading progress! User data is securely stored and retrieved from DynamoDB. Additionally, each user has a private S3 bucket to which photos can be uploaded.'
 const projectPastriesDetails = 'Single page site designed for a bakery Aubrey runs out of her home. Beautifully displays her pastries across all browsers and mobile! Allows here customers to contact her to place orders online.'
 
-const urlBusiness = "https://breesydev.com"
+const urlBusiness = "https://business.breesydev.com"
 const urlCoffee = "https://coffee.joshnassif.com"
 const urlBooks = "https://books.joshnassif.com"
 const urlPastries = "https://aubreyspastries.breesydev.com/"

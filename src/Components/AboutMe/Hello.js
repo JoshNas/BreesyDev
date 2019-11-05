@@ -20,7 +20,7 @@ export class Hello extends Component {
           <img src={dogs} className="rounded img-fluid hello-images" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing in snow" id="dogs"/>
         </div>
         <div className="p-2 bd-highlight hello-intro">
-          In 2018 Breesy, Roux, and myself moved from Atlanta to Ithaca to be with our best friend and partner, Amy, while she pursues her Phd in International Nutrition at Cornell.
+          In 2018 Breesy, Roux, and myself moved from Atlanta to Ithaca, NY to be with our best friend and partner, Amy, while she pursues her Phd in International Nutrition at Cornell.
         </div>
           <div className="p-2 bd-highlight hello-intro">
             <img src={cornell} className="rounded img-fluid hello-images" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="cornell in snow"/>

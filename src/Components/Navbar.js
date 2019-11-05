@@ -26,7 +26,7 @@ export class Navbar extends Component {
                   Websites
                 </button>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" target="blank" href="https://business.breesydev.com">BreesyDev</a>
+                  <a className="dropdown-item" target="blank" href="https://business.breesydev.com">Breesy Designs</a>
                   <a className="dropdown-item" target="blank" href="https://aubreyspastries.breesydev.com">Aubrey's Pastries</a>
                   <a className="dropdown-item" target="blank" href="https://coffee.joshnassif.com">Coffee Shop</a>
                   <a className="dropdown-item" target="blank" href="https://books.joshnassif.com">Book Club</a>
