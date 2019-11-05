@@ -1,0 +1,55 @@
+/*Jumbotron overrides*/
+.jumbotron{
+    margin-bottom:15px;
+		border-radius: 6px;
+}
+
+/* Header Parallax Element Style*/
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Paragrapgh for Parallax Section */
+.paral p {
+  color: white;
+	text-shadow: 18px 18px 88px #000000;
+  text-align: center;
+  line-height: 60px;
+  font-size: 175%;
+}
+
+/* Heading for Parallax Section */
+.about h1, h2 {
+  color: white;
+	text-shadow: 3px 3px 4px #000000;
+}
+
+
+.clickp:hover {
+	cursor: pointer;
+	color:#DAE9F8;
+}
+
+.hello {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.hello-intro {
+  text-align: center;
+  line-height: 50px;
+  font-size: 175%;
+}
+
+.hello-images {
+  max-height: 500px;
+  width: auto;
+}
+
+.hello-images-small {
+  max-height: 360px;
+  width: auto;
+}

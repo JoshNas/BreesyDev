@@ -1,0 +1,18 @@
+.navbar .logo {
+  width: 30px;
+  height: 30px;
+}
+
+.social-links {
+  justify-content: right;
+}
+
+.social-icon {
+	display : flex;
+	align-items : center;
+	justify-content: center;
+}
+
+.social-button {
+  margin: 2px;
+}

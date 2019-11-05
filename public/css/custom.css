@@ -1,24 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600,700&display=swap');
+
 html { font-size: 1rem;
        scroll-behavior: smooth; }
 
+
+
+body {
+ font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3, h4, li {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
 /*Responsize typography */
 @media (min-width: 320px) {
-    html { font-size: .5rem; }
+    html { font-size: .75rem; }
 }
 
 @media (min-width: 576px) {
-    html { font-size: .5rem; }
+    html { font-size: .9rem; }
 }
 @media (min-width: 768px) {
-    html { font-size: .75rem; }
+    html { font-size: 1rem; }
 }
 @media (min-width: 992px) {
     html { font-size: 1rem; }
 }
 @media (min-width: 1200px) {
-    html { font-size: 1.25rem; }
+    html { font-size: 1.15rem; }
 }
 
 @media (min-width: 2160px) {
-    html { font-size: 1.5rem; }
+    html { font-size: 1.3rem; }
 }

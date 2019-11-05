@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Nav } from './Components/Navbar'
-import { Intro } from './Components/Intro'
-import { About } from './Components/About'
-import { Contact } from './Components/Contact'
+import{ Navbar} from './Components/Navbar'
+import { Home } from './Components/HomePage/Home'
+import { AboutPage } from './Components/AboutMe/AboutPage'
+import { ContactApp } from './Components/ContactMe/ContactApp'
+import { ProjectManager } from "./Components/Projects/ProjectManager"
 import { Footer } from './Components/Footer'
 
 
@@ -12,14 +13,21 @@ export class App extends Component {
     return (
       <Router>
         <div>
-          <Nav />
+          <Navbar />
+          {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
           <Switch>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
             <Route path="/contact">
-              <Contact />
+              <ContactApp />
+            </Route>
+            <Route path="/projects">
+              <ProjectManager />
             </Route>
             <Route path="/">
-              <Intro />
-              <About />
+              <Home />
             </Route>
           </Switch>
         </div>
