@@ -36,6 +36,7 @@
 .hello {
   padding-left: 75px;
   padding-right: 75px;
+  text-align: justify;
 }
 
 .hello-intro {

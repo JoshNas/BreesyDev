@@ -14,7 +14,7 @@ export class Hello extends Component {
     return(
       <div className="jumbotron jumbotron-fluid hello">
         <div className="d-flex flex-column justify-content-center">
-          <div className="p-2 bd-highlight hello-intro">I began learning to code to build an application for my dad's small business and fell in love with the process. After a few months I decided to start transitioning from my career in online poker, with the goal of becoming a full time developer. In the two years since starting this journey I've built my own Python applications, MySQL and NoSQL databases, websites with JavaScript and React, and become an Amazon Web Services Certified Developer!</div>
+          <div className="p-2 bd-highlight hello-intro">I began learning to code to build an application for my dad's small business and fell in love with the process. After a few months I decided to start transitioning from my career in online poker, with the goal of becoming a full time developer. In the two years since starting this journey I've built my own Python applications, MySQL and NoSQL databases, websites with JavaScript and React, and became an Amazon Web Services Certified Developer!</div>
         </div>
         <div className="p-2 bd-highlight hello-intro">
           <img src={dogs} className="rounded img-fluid hello-images" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing in snow" id="dogs"/>

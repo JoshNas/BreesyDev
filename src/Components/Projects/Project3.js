@@ -1,12 +1,9 @@
 import React from 'react'
 import ModalImage from "react-modal-image";
 import "./projects.css";
-import projectThree1 from './img/projectThree1.png'
-import projectThree2 from './img/projectThree2.png'
-import projectThree3 from './img/projectThree3.png'
-import projectThreeBig1 from './img/projectThreeBig1.png'
-import projectThreeBig2 from './img/projectThreeBig2.png'
-import projectThreeBig3 from './img/projectThreeBig3.png'
+import df1 from './img/df1.png'
+import df2 from './img/df2.png'
+import df3 from './img/df3.png'
 
 const projectThree = 'Optimizer'
 const projectThreeDetails = 'Utilizes Google OR-Tools to find optimal solution from thousands of possibilites. The application takes input from user, solve the problem based on the given data and parameters, then return the optimal solution.'
@@ -17,13 +14,13 @@ export const Project3 = () => (
     <p className="col text-center lead">{projectThreeDetails}</p>
     <div class="row" >
       <div className="col-md-4">
-        <ModalImage small={projectThree1} large={projectThreeBig1} className="projectImage"/>
+        <ModalImage small={df1} large={df1} className="projectImage"/>
       </div>
       <div className="col-md-4">
-        <ModalImage small={projectThree2} large={projectThreeBig2} className="projectImage"/>
+        <ModalImage small={df2} large={df2} className="projectImage"/>
       </div>
       <div className="col-md-4">
-        <ModalImage small={projectThree3} large={projectThreeBig3} className="projectImage"/>
+        <ModalImage small={df3} large={df3} className="projectImage"/>
       </div>
     </div>
     <div className="container text-center" id="social-links">

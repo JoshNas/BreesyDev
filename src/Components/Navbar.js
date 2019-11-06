@@ -36,10 +36,10 @@ export class Navbar extends Component {
             </ul>
           </div>
           <div className="navbar-brand pull-right social-links">
-              <a className="btn btn-social btn-linkedin social-button" href={linkedIn} target="blank">
+              <a className="btn btn-sm btn-social btn-linkedin social-button" href={linkedIn} target="blank">
                 <span className="fa fa-linkedin social-icon"></span> LinkedIn
               </a>
-              <a className="btn btn-social btn-github social-button" href={github} target="blank">
+              <a className="btn btn-sm btn-social btn-github social-button" href={github} target="blank">
                 <span className="fa fa-github social-icon"></span> GitHub
               </a>
           </div>
