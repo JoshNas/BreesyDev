@@ -33,13 +33,13 @@ export class App extends Component {
               <ProjectManager />
               <Footer />
             </Route>
-            <Route path="/Home">
+            <Route path="/fetch">
+              <Lander />
+            </Route>
+            <Route path="/">
               <Navbar />
               <Home />
               <Footer />
-            </Route>
-            <Route path="/">
-              <Lander />
             </Route>
           </Switch>
         </div>
