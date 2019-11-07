@@ -1,0 +1,111 @@
+.landing-page {
+  margin-top: 0px;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breesy {
+  width: 100px;
+  height: 100px;
+  background-image: url('./img/breesyRound.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-animation: 6s ease-in-out 1s moveBreesy; /* Safari 4.0 - 8.0 */
+  animation: 6s ease-in-out 1s moveBreesy;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes moveBreesy {
+  from {
+      left: 0;
+  }
+  to {
+      left: 75%;
+  }
+}
+
+/* Standard syntax */
+@keyframes moveBreesy {
+  from {
+      left: 0;
+  }
+  to {
+      left: 75%;
+  }
+}
+
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-image: url('./img/ball.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-animation-name: moveBall; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear;
+  animation-name: moveBall;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  top: 350px;
+  left: 0px;
+  opacity: 0;
+}
+
+@-webkit-keyframes moveBall
+{
+  0%  {transform: translateY(0); left:0%; opacity: 1;}
+  5%  {transform: translateY(-15px); left:5%; opacity: 1;}
+  10% {transform: translateY(-30px); left:10%; opacity: 1;}
+  15% {transform: translateY(-15px); left:15%; opacity: 1;}
+  20% {transform: translateY(0); left:20%; opacity: 1;}
+  25% {transform: translateY(-15px); left:25%; opacity: 1;}
+  30% {transform: translateY(-30px); left:30%; opacity: 1;}
+  35% {transform: translateY(-15px); left:35%; opacity: 1;}
+  40% {transform: translateY(0); left:40%; opacity: 1;}
+  45% {transform: translateY(-15px); left:45%; opacity: 1;}
+  50% {transform: translateY(-30px); left:50%; opacity: 1;}
+  55% {transform: translateY(-15px); left:55%; opacity: 1;}
+  60% {transform: translateY(0); left:60%; opacity: 1;}
+  65% {transform: translateY(-15px); left:65%; opacity: 1;}
+  70% {transform: translateY(-30px); left:70%; opacity: 1;}
+  75% {transform: translateY(-15px); left:75%; opacity: 1;}
+  80% {transform: translateY(0); left:80%; opacity: 1;}
+  85% {transform: translateY(-15px); left:85%; opacity: 1;}
+  90% {transform: translateY(-30px); left:90%; opacity: 1;}
+  95% {transform: translateY(-15px); left:95%; opacity: 1;}
+  100% {transform: translateY(0); left:97%;}
+}
+@keyframes moveBall {
+  0%  {transform: translateY(0); left:0%; opacity: 1;}
+  5%  {transform: translateY(-15px); left:5%; opacity: 1;}
+  10% {transform: translateY(-30px); left:10%; opacity: 1;}
+  15% {transform: translateY(-15px); left:15%; opacity: 1;}
+  20% {transform: translateY(0); left:20%; opacity: 1;}
+  25% {transform: translateY(-15px); left:25%; opacity: 1;}
+  30% {transform: translateY(-30px); left:30%; opacity: 1;}
+  35% {transform: translateY(-15px); left:35%; opacity: 1;}
+  40% {transform: translateY(0); left:40%; opacity: 1;}
+  45% {transform: translateY(-15px); left:45%; opacity: 1;}
+  50% {transform: translateY(-30px); left:50%; opacity: 1;}
+  55% {transform: translateY(-15px); left:55%; opacity: 1;}
+  60% {transform: translateY(0); left:60%; opacity: 1;}
+  65% {transform: translateY(-15px); left:65%; opacity: 1;}
+  70% {transform: translateY(-30px); left:70%; opacity: 1;}
+  75% {transform: translateY(-15px); left:75%; opacity: 1;}
+  80% {transform: translateY(0); left:80%; opacity: 1;}
+  85% {transform: translateY(-15px); left:85%; opacity: 1;}
+  90% {transform: translateY(-30px); left:90%; opacity: 1;}
+  95% {transform: translateY(-15px); left:95%; opacity: 1;}
+  100% {transform: translateY(0); left:97%;}
+}
