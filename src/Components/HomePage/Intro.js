@@ -1,10 +1,7 @@
-import React, { Component} from 'react'
-import "./intro.css"
+import React from 'react'
 
 
-export class Intro extends Component{
-  render() {
-    return (
+export const Intro = () => (
       <div className="jumbotron jumbotron-fluid intro-bg" id="intro">
         <div className="d-flex justify-content-center intro-text" >
           <h3 className="animated fadeInLeft slow">Amazon Web Services</h3>
@@ -20,5 +17,3 @@ export class Intro extends Component{
         </div>
       </div>
     )
-  }
-}
