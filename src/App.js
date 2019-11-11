@@ -5,7 +5,7 @@ import { AboutPage } from './Components/AboutMe/AboutPage'
 import { ContactApp } from './Components/ContactMe/ContactApp'
 import { ProjectManager } from "./Components/Projects/ProjectManager"
 import { Footer } from './Components/Footer'
-import { Lander } from './Components/Landing/Lander'
+import { Fetch } from './Components/FetchPage/Fetch'
 import { Home } from './Components/HomePage/Home'
 
 export class App extends Component {
@@ -13,7 +13,6 @@ export class App extends Component {
     return (
       <Router>
         <div>
-
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
@@ -31,10 +30,9 @@ export class App extends Component {
               <Footer />
             </Route>
             <Route path="/fetch">
-              <Lander />
+              <Fetch />
             </Route>
             <Route path="/">
-              <Navbar />
               <Home />
             </Route>
           </Switch>

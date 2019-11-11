@@ -37,13 +37,13 @@ export class Hello extends Component {
             And spending time with our amazing friends!
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            <img src={friends} className="rounded img-fluid hello-images" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing by fire" id="friends"/>
+            <img src={friends} className="rounded img-fluid hello-images" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing by fire" id="friends"/>
           </div>
           <div className="p-2 bd-highlight hello-intro">
             Looking forward to new adventures
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            <img src={adventures} className="rounded img-fluid hello-images" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing by fire" id="friends"/>
+            <img src={adventures} className="rounded img-fluid hello-images" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing by fire" id="friends"/>
           </div>
       </div>
     )

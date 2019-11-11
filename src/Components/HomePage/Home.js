@@ -1,34 +1,28 @@
 import React, { Component } from 'react'
-import Zoom from 'react-reveal/Zoom';
 import { Intro } from './Intro.js'
-import { Coffee } from './Coffee.js'
+import { ButtonLinks } from './ButtonLinks.js'
+import { Skills } from './Skills.js'
 import './home.css'
-import roux from './img/roux.png'
-
-
 
 
 export class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {skills: true};
+
+    setTimeout(() => this.setState({skills: false}), 7500);
+  }
+
+
   render() {
-
     return(
-      <div id="container">
-
-
-        <div id="intro"><Intro /></div>
-
-        <div id="coffee"><Coffee /></div>
-        <div id="coffee"><Coffee /></div>
-        <Zoom>{/*Using Zoom Effect*/}
-          <header className="App-header">
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
-        </Zoom>
-        <div id="coffee"><Coffee /></div>
-
-
-
-
+      <div className="home">
+        <Intro />
+        <div className="d-flex justify-content-center icon-container">
+          { this.state.skills ?
+            <Skills /> :
+            <ButtonLinks /> }
+        </div>
       </div>
     )
   }

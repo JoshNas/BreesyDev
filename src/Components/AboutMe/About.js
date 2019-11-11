@@ -1,5 +1,4 @@
 import React, { Component} from 'react'
-import { Social } from '../Social'
 import './about.css'
 import profilepic from './img/profile.jpg'
 import profilepicalt from './img/profileAlt.png'
@@ -51,7 +50,6 @@ export class About extends Component {
           <h2 className="lead" id="skills">{skillOne}</h2>
           <h2 className="lead clickp" id="skills">{skillTwo}</h2>
           <h2 className="lead" id="skills">{skillThree}</h2>
-          <Social />
         </div>
       </div>
     )
