@@ -181,4 +181,35 @@ background-size: cover;
     .imageLinks  {
       width: 27%
     }
+
+}
+
+@media only screen and (max-height: 850px) {
+  .big-skills img {
+    bottom: 1%;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+  .big-skills img {
+    bottom: -8%;
+    }
+}
+
+@media only screen and (max-height: 680px) {
+  .big-skills img{
+    bottom: -16%;
+    }
+}
+
+@media only screen and (max-height: 625px) {
+  .big-skills img{
+    bottom: -30%;
+    }
+}
+
+@media only screen and (max-height: 5px) {
+  .big-skills img{
+    bottom: -100%;
+    }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Intro = () => (
       <div className="intro">
-        <div className="d-flex justify-content-center intro-text" >
+        <div className="d-flex justify-content-center" >
           <h3 className="animated fadeIn aws">Amazon Web Services</h3>
         </div>
         <div className="d-flex justify-content-center">
