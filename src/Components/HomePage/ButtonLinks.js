@@ -17,7 +17,7 @@ export const ButtonLinks = () => (
                    TransitionProps={{ timeout: 600 }}
                    placement="left-start"
                    title="Meet Josh">
-            <a className="imageLinks" href="/projects" data-for="helloworld">
+            <a className="imageLinks" href="/about" data-for="helloworld">
               <img className="img-fluid rounded-circle" src={profile} alt="profile"/>
             </a>
           </Tooltip>
