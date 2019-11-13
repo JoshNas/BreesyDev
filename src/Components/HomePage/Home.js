@@ -9,10 +9,17 @@ import './home.css'
 export class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {skills: true};
+    this.state = {skills: true,
+                  skipButton: true};
 
-    setTimeout(() => this.setState({skills: false}), 7500);
+    setTimeout(() => this.setState({skills: false, skipButton: false}), 7600);
+
   }
+
+  onClick = () => (
+    this.setState({skills: false, skipButton: false})
+  )
+
 
   render() {
     return(
@@ -23,6 +30,16 @@ export class Home extends Component {
           { this.state.skills ?
             <Skills /> :
             <ButtonLinks /> }
+        </div>
+        <div className="d-flex justify-content-center">
+          { this.state.skipButton &&
+            <div className="d-flex justify-content-center button-container">
+              <button className="btn btn-secondary animated pulse skip-button"
+                onClick={this.onClick}>
+                <span>Skip</span>
+              </button>
+
+            </div> }
         </div>
       </div>
     )

@@ -18,7 +18,7 @@ const HtmlTooltip = withStyles(theme => ({
 }))(Tooltip);
 
 export const ButtonLinks = () => (
-      <div className="d-flex flex-column justify-content-center">
+      <div className="d-flex flex-column justify-content-center button-links">
         <div className="d-flex justify-content-center">
           <HtmlTooltip TransitionComponent={Zoom}
                    TransitionProps={{ timeout: 600 }}
