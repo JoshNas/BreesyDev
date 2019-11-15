@@ -11,7 +11,10 @@ overflow: hidden;
 }
 
 .button-container {
-  padding-top: 5%;
+  position: absolute;
+  top: 88%;
+  padding-top: 3%;
+
 }
 
 .skip-button {
@@ -28,11 +31,11 @@ overflow: hidden;
 }
 
 .resp {
-  animation-delay: 3.5s;
+  animation-delay: 3.25s;
 }
 
 .js {
-  animation-delay: 5.5s;
+  animation-delay: 5.25s;
 }
 
 .icon-img {
@@ -41,21 +44,8 @@ overflow: hidden;
   animation-delay: 7.5s;
 }
 
-.skill-icon {
-  width: 80%;
-  animation-name: fadeInSkills;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  opacity: 0;
-}
-
-@keyframes fadeInSkills {
-    0%   {opacity: .25;}
-    33%  {opacity: 1;}
-    66%  {opacity: 1;}
-    100% {opacity: .25;}
+.button-links {
+  margin-bottom: 13%;
 }
 
 .imageLinks {
@@ -93,6 +83,79 @@ overflow: hidden;
   color: rgb(0,0,0);
 }
 
+/*  Handle transition between skills that display on page load */
+
+.big-skills img {
+    -webkit-animation-name: cf4FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -moz-animation-name: cf4FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 8s;
+    -o-animation-name: cf4FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 8s;
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    width: 22%;
+    position: absolute;
+    top: 37%;
+    padding-top: 1%;
+}
+
+.big-skills img:nth-of-type(1) {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.big-skills img:nth-of-type(2) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.big-skills img:nth-of-type(3) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.big-skills img:nth-of-type(4) {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+}
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
 /*  WIDTH */
 /* On screens that are 1080px or less */
 @media screen and (max-width: 1080px) {
@@ -123,14 +186,22 @@ overflow: hidden;
 }
 
 /* HEIGHT queries*/
+@media screen and (max-height: 800px) {
+  .intro h3{
+    font-size: 1.25rem;
+  }
+  .big-skills img {
+    width: 21%;
+  }
+}
+
 @media screen and (max-height: 720px) {
   .intro h3{
     font-size: 1.25rem;
   }
-  .skill-icon {
-    width: 70%;
+  .big-skills img {
+    width: 20%;
   }
-
 }
 
 @media screen and (max-height: 600px) {
@@ -140,8 +211,11 @@ overflow: hidden;
   .imageLinks {
     width: 15%;
   }
-  .skill-icon {
-    width: 60%;
+  .big-skills img{
+    width: 19%;
+  }
+  .button-container{
+    left: 5%;
   }
 }
 
@@ -152,8 +226,8 @@ overflow: hidden;
   .imageLinks {
     width: 14%;
   }
-  .skill-icon {
-    width: 50%;
+  .big-skills img {
+    width: 18%;
   }
 }
 
@@ -171,22 +245,13 @@ overflow: hidden;
 /* Screen height resize width combos */
 @media screen and (max-height: 740px) and (min-width: 1080px){
   .imageLinks {
-    width: 14%;
-  }
-  .intro h3{
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-height: 625px) and (min-width: 1080px){
-  .imageLinks {
     width: 13%;
   }
   .intro h3{
     font-size: 1.1rem;
   }
   .icon-img {
-    width: 6%;
+    width: 5%;
   }
 }
 
@@ -226,7 +291,7 @@ overflow: hidden;
   }
 }
 
-@media screen and (max-height: 625px) and (min-width: 1400px){
+@media screen and (max-height: 650px) and (min-width: 1400px){
   .imageLinks {
     width: 12%;
   }

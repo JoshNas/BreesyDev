@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Intro } from './Intro.js'
 import { ButtonLinks } from './ButtonLinks.js'
-import { Skills } from './Skills.js'
+import { Skills } from './SkillsSmooth.js'
 import { IconBar } from './IconBar.js'
 import './home.css'
 
@@ -13,13 +13,11 @@ export class Home extends Component {
                   skipButton: true};
 
     setTimeout(() => this.setState({skills: false, skipButton: false}), 7600);
-
   }
 
   onClick = () => (
     this.setState({skills: false, skipButton: false})
   )
-
 
   render() {
     return(
