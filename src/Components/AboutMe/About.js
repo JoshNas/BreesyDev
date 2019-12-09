@@ -44,7 +44,7 @@ export class About extends Component {
     return (
       <div className="jumbotron jumbotron-fluid paral" id="about" style={this.state.originalBackground ? background1 : background2} onClick={this.changeBackground.bind(this)}>
         <div className="container text-center about">
-          <img src={this.state.originalProfile ? profilepic : profilepicalt} onClick={this.changeProfile.bind(this)} className="rounded-circle img-fluid" alt="profile" />
+          <img src={this.state.originalProfile ? profilepic : profilepicalt} onClick={this.changeProfile.bind(this)} className="rounded-circle img-fluid" alt="josh standing on mountain" />
           <h1 className="display-3">{title}</h1>
           <h2 className="display-4">{specializiations}</h2>
           <h2 className="lead" id="skills">{skillOne}</h2>

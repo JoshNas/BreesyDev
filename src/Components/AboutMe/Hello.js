@@ -29,21 +29,21 @@ export class Hello extends Component {
             We all enjoy the year round outdoor activities.
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            <img src={kayak} className="rounded img-fluid hello-images-small" data-aos="fade-up-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing in snow" id="dogs"/>
-            <img src={play} className="rounded img-fluid hello-images-small" data-aos="flip-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing in snow" id="dogs"/>
-            <img src={lake} className="rounded img-fluid hello-images-small" data-aos="fade-up-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing in snow" id="dogs"/>
+            <img src={kayak} className="rounded img-fluid hello-images-small" data-aos="fade-up-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="kayaking on cayuga lake" id="dogs"/>
+            <img src={play} className="rounded img-fluid hello-images-small" data-aos="flip-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing" id="dogs"/>
+            <img src={lake} className="rounded img-fluid hello-images-small" data-aos="fade-up-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs contemplating swimming" id="dogs"/>
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            And spending time with our amazing friends!
+            And spending time with our amazing friends.
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            <img src={friends} className="rounded img-fluid hello-images" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing by fire" id="friends"/>
+            <img src={friends} className="rounded img-fluid hello-images" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="friends and fire pit" id="friends"/>
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            Looking forward to new adventures
+            Looking forward to new adventures!
           </div>
           <div className="p-2 bd-highlight hello-intro">
-            <img src={adventures} className="rounded img-fluid hello-images" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dogs playing by fire" id="friends"/>
+            <img src={adventures} className="rounded img-fluid hello-images" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" alt="dog looking forward" id="friends"/>
           </div>
       </div>
     )

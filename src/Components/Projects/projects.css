@@ -31,6 +31,11 @@
 	padding-bottom: 20px;
 }
 
+.arbImage {
+  max-width: 5%;
+  padding-bottom: 20px;
+}
+
 #siteImage {
 	max-height: 320px;
 	padding-bottom: 20px;

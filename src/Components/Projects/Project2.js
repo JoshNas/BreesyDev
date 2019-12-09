@@ -15,13 +15,13 @@ export const Project2 = () => (
     <p className="col text-center lead">{projectTwoDetails}</p>
     <div class="row" >
       <div className="col-md-4">
-        <ModalImage small={names} large={names} className="projectImage"/>
+        <ModalImage small={names} large={names} className="projectImage" alt="log in screen"/>
       </div>
       <div className="col-md-4">
-        <ModalImage small={pin} large={pin} className="projectImage"/>
+        <ModalImage small={pin} large={pin} className="projectImage" alt="PIN screen"/>
       </div>
       <div className="col-md-4">
-        <ModalImage small={orders} large={orders} className="projectImage"/>
+        <ModalImage small={orders} large={orders} className="projectImage" alt="order entry screen"/>
       </div>
     </div>
     <div className="container text-center" id="social-links">

@@ -36,7 +36,6 @@ export class Home extends Component {
                 onClick={this.onClick}>
                 <span>Skip</span>
               </button>
-
             </div> }
         </div>
       </div>
