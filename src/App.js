@@ -6,6 +6,7 @@ import { Contact } from './Components/ContactMe/ContactApp'
 import { ProjectManager } from "./Components/Projects/ProjectManager"
 import { Footer } from './Components/Footer'
 import { Home } from './Components/HomePage/Home'
+import { Showcase } from './Components/HireUs/Showcase'
 
 export class App extends Component {
   render() {
@@ -28,6 +29,9 @@ export class App extends Component {
               <Navbar />
               <ProjectManager />
               <Footer />
+            </Route>
+            <Route path="/work">
+              <Showcase />
             </Route>
             <Route path="/">
               <Home />

@@ -1,0 +1,71 @@
+.work {
+  padding: 1%;
+  background-color: #618685;
+}
+
+
+
+.header {
+  padding: 0;
+  background-color: inherit;
+  color: #040430;
+  animation: glow 2s infinite alternate;
+}
+
+.header-text {
+  font-size: 5em;
+  padding: 15px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  to {
+    text-shadow: 2px 2px 4px #0303a5;
+  }
+}
+
+.work-container {
+  background-color: #4040a1;
+  text-align: center;
+}
+
+.work-container h1 {
+  color: #040430;
+  font-size: 4em;
+  text-shadow:
+    -1px -1px 0 #0303a5,
+    1px -1px 0 #0303a5,
+    -1px 1px 0 #0303a5,
+    1px 1px 0 #0303a5;
+}
+
+.work-container div{
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.work-container a {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: inherit; /* no underline */
+}
+
+.work-container a:hover {
+  color: #80ced6;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: inherit; /* no underline */
+}
+
+
+#dev-img {
+  margin-left: 55px;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+}
+
+
+.skill {
+  padding: 3%;
+}
