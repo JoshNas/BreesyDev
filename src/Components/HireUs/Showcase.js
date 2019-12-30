@@ -1,6 +1,6 @@
 import React from 'react'
 import './showcase.css'
-import clock from './img/clock.png'
+import colab from './img/colab.png'
 import bulb from './img/bulb.png'
 import aws from './img/aws.png'
 import programing from './img/programing.jpg'
@@ -25,7 +25,7 @@ export const Showcase = () => (
               </div>
             </div>
             <div class="col-md flex-grow">
-              <img className="img img-fluid rounded animated fadeIn" src={clock} alt="coder coding" id="dev-img"/>
+              <img className="img img-fluid rounded animated fadeIn" src={colab} alt="coder coding" id="dev-img"/>
             </div>
           </div>
         </div>
