@@ -100,19 +100,19 @@ export class ProjectManager extends Component{
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid" id="projects">
+      <div className="jumbotron jumbotron-fluid projects">
         {/* Begin main container */}
         <div hidden={!this.state.displayMain}>
           <div className="d-flex flex-column justify-content-around">
             {/* Begin row one */}
             <div class="d-flex flex-row" id="learn-more">
               <div className="col-lg-6 text-center">
-                <h3>{projectOne}</h3>
+                <h1>{projectOne}</h1>
                 <p>{projectOneDescription}</p>
                 <button className="btn btn-info" onClick={this.toggleOne.bind(this)}>Learn More</button>
               </div>
               <div className="col-lg-6 text-center">
-                <h3>{projectTwo}</h3>
+                <h1>{projectTwo}</h1>
                 <p>{projectTwoDescription}</p>
                 <button className="btn btn-info" onClick={this.toggleTwo.bind(this)}>Learn More</button>
               </div>
@@ -122,12 +122,12 @@ export class ProjectManager extends Component{
             {/* Begin row two */}
             <div class="d-flex flex-row" id="learn-more">
               <div className="col-lg-6 text-center">
-                <h3>{projectThree}</h3>
+                <h1>{projectThree}</h1>
                 <p>{projectThreeDescription}</p>
                 <button className="btn btn-info" onClick={this.toggleThree.bind(this)}>Learn More</button>
               </div>
               <div className="col-lg-6 text-center">
-                <h3>{projectFour}</h3>
+                <h1>{projectFour}</h1>
                 <p>{projectFourDescription}</p>
                 <button className="btn btn-info" onClick={this.toggleFour.bind(this)}>Learn More</button>
               </div>
@@ -137,14 +137,14 @@ export class ProjectManager extends Component{
             {/* Begin row three */}
             <div class="d-flex flex-row flex-wrap" id="learn-more">
               <div className="col-lg-6 text-center">
-                <a href={urlBusiness} target="blank" id="link"><h3>{projectBusiness}</h3></a>
+                <a href={urlBusiness} target="blank" id="link"><h1>{projectBusiness}</h1></a>
                 <p>{projectBusinessDetails}</p>
                 <a href={urlBusiness} target="blank">
                   <img className="img-fluid" src={businessIMG} alt={urlBusiness} id="siteImage"/>
                 </a>
               </div>
               <div className="col-lg-6 text-center">
-                <a href={urlCoffee} target="blank" id="link"><h3>{projectCoffee}</h3></a>
+                <a href={urlCoffee} target="blank" id="link"><h1>{projectCoffee}</h1></a>
                 <p>{projectCoffeeDetails}</p>
                 <a href={urlCoffee} target="blank">
                   <img className="img-fluid" src={coffeeIMG} alt={urlCoffee} id="siteImage"/>
@@ -156,14 +156,14 @@ export class ProjectManager extends Component{
             {/* Begin row four */}
             <div class="d-flex flex-row flex-wrap" id="learn-more">
               <div className="col-lg-6 text-center">
-                <a href={urlBooks} target="blank" id="link"><h3>{projectBooks}</h3></a>
+                <a href={urlBooks} target="blank" id="link"><h1>{projectBooks}</h1></a>
                 <p>{projectBooksDetails}</p>
                 <a href={urlBooks} target="blank">
                   <img className="img-fluid" src={booksIMG} alt={urlBooks} id="siteImage"/>
                 </a>
               </div>
               <div className="col-lg-6 text-center">
-                <a href={urlPastries} target="blank" id="link"><h3>{projectPastries}</h3></a>
+                <a href={urlPastries} target="blank" id="link"><h1>{projectPastries}</h1></a>
                 <p>{projectPastriesDetails}</p>
                 <a href={urlPastries} target="blank">
                   <img className="img-fluid" src={pastryIMG} alt={urlPastries} id="siteImage"/>

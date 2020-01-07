@@ -11,7 +11,7 @@ const projectTwoDetails = 'Complete custimizable order system for a restaurant. 
 
 export const Project2 = () => (
   <div className="container">
-    <h3 className="col text-center">{projectTwo}</h3>
+    <h1 className="col text-center">{projectTwo}</h1>
     <p className="col text-center lead">{projectTwoDetails}</p>
     <div class="row" >
       <div className="col-md-4">

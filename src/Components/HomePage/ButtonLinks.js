@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from './img/profile.png'
 import code from './img/code.gif'
-import contact from './img/coffee2.gif'
+import contact from './img/coffee.gif'
 import git from './img/github-logo.png'
 import { withStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';

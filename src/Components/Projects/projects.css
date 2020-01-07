@@ -4,9 +4,14 @@
 		border-radius: 6px;
 }
 
-#projects {
+.projects {
 	margin-top: 25px;
 	padding: 45px;
+}
+
+/* Us h3 size for h1 */
+.projects h1{
+  font-size: 1.75rem;
 }
 
 #projectRow {

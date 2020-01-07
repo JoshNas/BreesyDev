@@ -1,10 +1,7 @@
 import React from 'react'
 import './showcase.css'
 import colab from './img/colab.png'
-import bulb from './img/bulb.png'
 import aws from './img/aws.png'
-import programing from './img/programing.jpg'
-import email from './img/email_sigs.png'
 
 
 export const Showcase = () => (
@@ -19,8 +16,8 @@ export const Showcase = () => (
             <div class="col-md flex-grow">
               <div className="jumbotron jumbotron-fluid work-container">
                 <h1>Web Development</h1>
-                <div className="lead skill text-center">We build the web site you want to showcase your business</div>
-                <div className="lead skill text-center">Modern design to help you stand out and attract customers</div>
+                <p className="lead skill text-center">We build the web site you want to showcase your business</p>
+                <p className="lead skill text-center">Modern design to help you stand out and attract customers</p>
                 <a href="/contact" className="skill lead">Tell us about your dream project</a>
               </div>
             </div>

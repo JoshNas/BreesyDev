@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Intro } from './Intro.js'
 import { ButtonLinks } from './ButtonLinks.js'
-import { Skills } from './SkillsSmooth.js'
+import { Skills } from './Skills.js'
 import { IconBar } from './IconBar.js'
 import './home.css'
 

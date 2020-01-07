@@ -10,7 +10,7 @@ const projectThreeDetails = 'Utilizes Google OR-Tools to find optimal solution f
 
 export const Project3 = () => (
   <div className="container">
-    <h3 className="col text-center">{projectThree}</h3>
+    <h1 className="col text-center">{projectThree}</h1>
     <p className="col text-center lead">{projectThreeDetails}</p>
     <div class="row" >
       <div className="col-md-4">

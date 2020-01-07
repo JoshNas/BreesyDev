@@ -12,7 +12,7 @@ export const Intro = () => (
           <h3 className="animated fadeIn resp">Responsive Web Design</h3>
         </div>
         <div className="d-flex justify-content-center">
-          <h3 className="animated fadeIn js">With React and JavaScript</h3>
+          <h3 className="animated fadeIn js">JavaScript and React</h3>
         </div>
       </div>
     )

@@ -10,15 +10,15 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
+
 }
 
 /* Paragrapgh for Parallax Section */
 .paral p {
   color: white;
-	text-shadow: 18px 18px 88px #000000;
+	text-shadow: 3px 3px 4px #000000;
   text-align: center;
-  line-height: 60px;
-  font-size: 175%;
+  line-height: 30px;
 }
 
 /* Heading for Parallax Section */
@@ -26,7 +26,6 @@
   color: white;
 	text-shadow: 3px 3px 4px #000000;
 }
-
 
 .clickp:hover {
 	cursor: pointer;

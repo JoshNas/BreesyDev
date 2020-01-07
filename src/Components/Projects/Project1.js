@@ -7,7 +7,7 @@ const projectOneDetails = 'Application that cleans and analyzes data pulled from
 
 export const Project1 = () => (
   <div className="container">
-    <h3 className="col text-center" id="project1">{projectOne}</h3>
+    <h1 className="col text-center" id="project1">{projectOne}</h1>
     <p className="col text-center lead">{projectOneDetails}</p>
     <div className="col text-center">
         <img className="img img-fluid" src={arb} alt="arbitrage program"/>

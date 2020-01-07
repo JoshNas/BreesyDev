@@ -2,11 +2,11 @@ import React, { Component} from 'react'
 import './about.css'
 import profilepic from './img/profile.jpg'
 import profilepicalt from './img/profileAlt.png'
-import background from './img/background2.jpg'
-import backgroundAlt from './img/background2Alt.gif'
+import background from './img/background.jpg'
+import backgroundAlt from './img/backgroundAlt.gif'
 
 const background1 = {
-  backgroundImage: `url(${background})`
+  backgroundImage: `linear-gradient(rgba(0, 0, 80, 0.2), rgba(0, 0, 0, 0.9)), url(${background})`,
 }
 
 const background2 = {
@@ -47,9 +47,9 @@ export class About extends Component {
           <img src={this.state.originalProfile ? profilepic : profilepicalt} onClick={this.changeProfile.bind(this)} className="rounded-circle img-fluid" alt="josh standing on mountain" />
           <h1 className="display-3">{title}</h1>
           <h2 className="display-4">{specializiations}</h2>
-          <h2 className="lead" id="skills">{skillOne}</h2>
-          <h2 className="lead clickp" id="skills">{skillTwo}</h2>
-          <h2 className="lead" id="skills">{skillThree}</h2>
+          <p className="lead" id="skills">{skillOne}</p>
+          <p className="lead clickp" id="skills">{skillTwo}</p>
+          <p className="lead" id="skills">{skillThree}</p>
         </div>
       </div>
     )

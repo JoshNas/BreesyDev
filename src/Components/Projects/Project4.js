@@ -10,7 +10,7 @@ const projectFourDetails = 'Coffee shop app built with Python, utilizing MySQL f
 
 export const Project4 = () => (
   <div className="container">
-    <h3 className="col text-center">{projectFour}</h3>
+    <h1 className="col text-center">{projectFour}</h1>
     <p className="col text-center lead">{projectFourDetails}</p>
     <div class="row" >
       <div className="col-md-6">
