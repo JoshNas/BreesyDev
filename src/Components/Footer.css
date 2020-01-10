@@ -1,0 +1,21 @@
+.social-footer a{
+  margin: 5px;
+}
+
+
+
+.social-footer .logo {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-filter: brightness(100%);
+}
+
+
+.social-footer .logo:hover {
+  -webkit-filter: brightness(125%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}

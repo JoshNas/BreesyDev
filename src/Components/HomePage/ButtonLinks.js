@@ -51,7 +51,7 @@ export const ButtonLinks = () => (
                    TransitionProps={{ timeout: 600 }}
                    placement="right-start"
                    title="Checkout GitHub">
-                   <a className="imageLinks" href="https://github.com/JoshNas" data-toggle="tooltip" data-placement="top" title="Checkout GitHub">
+                   <a className="imageLinks" href="https://github.com/JoshNas" target="blank" data-toggle="tooltip" data-placement="top" title="Checkout GitHub">
                      <img className="img-fluid rounded-circle button-link" src={git} alt="github"/>
                    </a>
           </HtmlTooltip>
