@@ -11,11 +11,11 @@ export const Footer = () => (
       <a className="logo" href="https://breesydev.com/">
         <img src={logo} alt="Breesy"/>
       </a>
-      <a class="btn btn-social-icon btn-github" href="https://github.com/JoshNas/" target="blank">
-        <span class="fa fa-github"></span>
+      <a className="btn btn-social-icon btn-github" href="https://github.com/JoshNas/" target="blank">
+        <span className="fa fa-github"></span>
       </a>
-      <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/joshnassif/" target="blank">
-        <span class="fa fa-linkedin"></span>
+      <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/joshnassif/" target="blank">
+        <span className="fa fa-linkedin"></span>
       </a>
     </div>
   </footer>

@@ -1,3 +1,11 @@
+.contact-container {
+  background-image: url('./img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
 
 *,
 *:after,
@@ -101,8 +109,4 @@ textarea {
 }
 .form-btn:focus {
  outline: 0;
-}
-
-.paralsec2 {
-background-image: url('./img/background.jpg');
 }

@@ -20,7 +20,7 @@ export class Navbar extends Component {
                 <img src={logo} className="d-inline-block align-top rounded logo" alt="logo"/>
               </a>
               <ul className="navbar-nav mr-auto">
-                <li className="nav-item active"><a className="nav-link" href="/about">Meet Josh</a></li>
+                <li className="nav-item"><a className="nav-link" href="/about">Meet Josh</a></li>
                 <li className="nav-item"><a className="nav-link" href="/projects">Projects</a></li>
                 <li className="nav-item dropdown">
                   <button className="btn btn-link nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

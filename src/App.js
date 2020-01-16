@@ -19,6 +19,7 @@ export class App extends Component {
             <Route path="/about">
               <Navbar />
               <AboutPage />
+              <Footer />
             </Route>
             <Route path="/contact">
               <Navbar />

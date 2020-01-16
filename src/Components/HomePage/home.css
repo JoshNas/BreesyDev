@@ -82,3 +82,19 @@ overflow: hidden;
 .button-link:hover {
   color: rgb(0,0,0);
 }
+
+
+@media screen and (max-width: 768px) {
+  .button-links {
+    margin-top: 50px;
+  }
+  .imageLinks {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .imageLinks {
+    width: 12rem;
+  }
+}

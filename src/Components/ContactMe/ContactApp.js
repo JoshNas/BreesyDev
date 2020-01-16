@@ -11,7 +11,8 @@ export class Contact extends Component {
    name: '',
    email: '',
    subject: '',
-   message: ''
+   message: '',
+   messageSent: false
   }
 
   this.handleChange = this.handleChange.bind(this)
@@ -35,8 +36,6 @@ export class Contact extends Component {
 
  handleSubmit = (e) => {
    e.preventDefault()
-   let validEmail = this.validateEmail()
-   console.log(validEmail)
 
    if(this.validateEmail()){
      var data = {
@@ -46,12 +45,7 @@ export class Contact extends Component {
      message: this.state.message
     }
 
-    this.setState({
-     name: '',
-     email: '',
-     subject: '',
-     message: ''
-    })
+
 
     $.ajax({
       type: "POST",
@@ -61,9 +55,16 @@ export class Contact extends Component {
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify(data),
 
-      success: function () {
+      success: () => {
         // clear form and show a success message
-        alert('Thanks!');
+        this.setState({
+         name: '',
+         email: '',
+         subject: '',
+         message: '',
+         messageSent: true
+       })
+
       },
       error: function () {
         // show an error message
@@ -73,40 +74,45 @@ export class Contact extends Component {
   } else {
     alert('Please enter a valid email')
   }
-
-
  }
 
  render() {
   return(
-    <div className="jumbotron jumbotron-fluid paral paralsec2" id="contact">
-      <form className='react-form' method="post" onSubmit={this.handleSubmit}>
-       <h1 id='formTitle'>Contact</h1>
+    <div className="container-fluid contact-container" id="contact">
+      <div className="container-fluid">
+        {this.state.messageSent &&
+          <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Thanks! </strong>Your message has been sent.
+          </div>}
+        <form className='react-form' method="post" onSubmit={this.handleSubmit}>
+         <h1 id='formTitle'>Contact</h1>
+         <fieldset className='form-group'>
+          <label>Name:</label>
+          <input id='formName' className='form-input' name='name' type='text' required onChange={this.handleChange} value={this.state.name} />
+         </fieldset>
 
-       <fieldset className='form-group'>
-        <label>Name:</label>
-        <input id='formName' className='form-input' name='name' type='text' required onChange={this.handleChange} value={this.state.name} />
-       </fieldset>
+         <fieldset className='form-group'>
+           <label>Email:</label>
+          <input id='formEmail' className='form-input' name='email' type='email' required onChange={this.handleChange} value={this.state.email} />
+         </fieldset>
 
-       <fieldset className='form-group'>
-         <label>Email:</label>
-        <input id='formEmail' className='form-input' name='email' type='email' required onChange={this.handleChange} value={this.state.email} />
-       </fieldset>
+         <fieldset className='form-group'>
+          <label>Subject:</label>
+          <input id='formSubject' className='form-input' name='subject' type='text' required onChange={this.handleChange} value={this.state.subject} />
+         </fieldset>
 
-       <fieldset className='form-group'>
-        <label>Subject:</label>
-        <input id='formSubject' className='form-input' name='subject' type='text' required onChange={this.handleChange} value={this.state.subject} />
-       </fieldset>
+         <fieldset className='form-group'>
+          <label>Message:</label>
+          <textarea id='formMessage' className='form-textarea' name='message' required onChange={this.handleChange} value={this.state.message}></textarea>
+         </fieldset>
 
-       <fieldset className='form-group'>
-        <label>Message:</label>
-        <textarea id='formMessage' className='form-textarea' name='message' required onChange={this.handleChange} value={this.state.message}></textarea>
-       </fieldset>
+         <div className='form-group'>
+           <button id='formButton' className='form-btn' type='submit'>Send</button>
+         </div>
+        </form>
+      </div>
 
-       <div className='form-group'>
-         <button id='formButton' className='form-btn' type='submit'>Send</button>
-       </div>
-      </form>
     </div>
   )
  }

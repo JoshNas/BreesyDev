@@ -52,7 +52,9 @@ export class ContactForm extends Component {
 
     success: function () {
       // clear form and show a success message
-      alert('Thanks!');
+      <div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>;
     },
     error: function () {
       // show an error message
@@ -64,7 +66,7 @@ export class ContactForm extends Component {
 
  render() {
   return(
-    <div className="jumbotron jumbotron-fluid paral paralsec2" id="contact">
+    <div className="container-fluid" id="contact">
       <form className='react-form' method="post" onSubmit={this.handleSubmit}>
        <h1 id='formTitle'>Contact</h1>
 
